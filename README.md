@@ -3,7 +3,7 @@
 
 This repo serves as a home for the 'Feed Reader Testing' project in the Udacity [Frontend Web Development](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) Nanodegree.
 
-This project is an exercise writing tests against a pre-existing application, and a study of test-driven development.
+This project is an exercise for writing tests against a pre-existing application, and a study of test-driven development.
 
 The Feed Reader is a web-based application that reads [RSS feeds](https://en.wikipedia.org/wiki/RSS). It uses the Google Feed Reader API and stores RSS feeds as a JSON object. The unit tests are written with [Jasmine](http://jasmine.github.io/), a JavaScript behavioral test suite developed by [Pivotal Labs](https://pivotal.io/open-source).
 
@@ -30,9 +30,12 @@ Once all of the project's dependencies are installed, open a terminal in the pro
 
 **To add and edit tests or tasks:**
 
-The [Jasmine tests](/jasmine/spec/feedreader.js) live in the repository:
+Navigate to the [Jasmine tests](/jasmine/spec/feedreader.js) file to view or write tests. The file lives in the repository:
 
 >```./jasmine/spec/feedreader.js```
+
+### Screenshot of Feed Reader app up and running:
+![](img/screenshot-feed-reader.png)
 
 Resources
 --------
@@ -40,7 +43,6 @@ Resources
 This project uses the following style guides and repositories:
 
 - The Feed Reader application, grading rubric, and style guides via [Udacity](https://github.com/udacity/frontend-nanodegree-feedreader)'s repository
-
 
 Contributions and Feedback
 --------
