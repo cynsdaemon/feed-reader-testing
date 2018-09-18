@@ -34,7 +34,7 @@ Once all of the project's dependencies are installed, run Jasmine tests:
 
 3. > ```npm test```
 
-**To add and edit tests:** Navigate to the [Jasmine tests](/jasmine/spec/feedreader.js) file. The file lives in the repository:
+**To view or edit tests:** Navigate to the [Jasmine tests](/jasmine/spec/feedreader.js) file. The file lives in the repository:
 
 >```./jasmine/spec/feedreader.js```
 
