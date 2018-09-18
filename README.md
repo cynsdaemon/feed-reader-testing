@@ -14,7 +14,7 @@ Project Setup Instructions
 
 **To setup this project on a local machine:**
 
-:memo: This project uses **npm** as it's task runner. **Git** version control and **Node.js** should be installed and configured *before* installing Jasmine. Overall, the following dependencies are required:
+:memo: This project uses a few **npm** scripts as it's task runner. **Git** version control and **Node.js** should be installed and configured *before* installing Jasmine. Overall, the following dependencies are required:
 
 - [ ] Git version control ([Getting Started with Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
 - [ ] [Node.js](https://nodejs.org/en/)
@@ -22,19 +22,19 @@ Project Setup Instructions
 
 For each dependency, be sure to follow the install instructions specific to your machine's operating system. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/).
 
-:heavy_check_mark: Lastly, open a terminal in the root directory of the project, and run the **npm** command to install node packages:
+:heavy_check_mark: Open a terminal in the root directory of the project, and run the **npm** commands to install packages:
 
->```npm install```
+1. >```npm install```
 
-**To run the tests locally:**
+This starts a local server, opens a web browser, and watches for file changes:
+
+2. >```npm watch```
 
 Once all of the project's dependencies are installed, run Jasmine tests:
 
-> ```npm test```
+3. > ```npm test```
 
-**To add and edit tests or tasks:**
-
-Navigate to the [Jasmine tests](/jasmine/spec/feedreader.js) file to view or write tests. The file lives in the repository:
+**To add and edit tests:** Navigate to the [Jasmine tests](/jasmine/spec/feedreader.js) file. The file lives in the repository:
 
 >```./jasmine/spec/feedreader.js```
 
