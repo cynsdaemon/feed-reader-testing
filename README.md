@@ -22,6 +22,10 @@ Project Setup Instructions
 
 For each dependency, be sure to follow the install instructions specific to your machine's operating system. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/).
 
+:white_check_mark: Lastly, run **npm** command to install node packages:
+
+>```npm install```
+
 **To run the tests locally:**
 
 Once all of the project's dependencies are installed, open a terminal in the project's root directory and run:
