@@ -22,7 +22,7 @@ Project Setup Instructions
 
 For each dependency, be sure to follow the install instructions specific to your machine's operating system. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/).
 
-:heavy_check_mark: Lastly, run **npm** command to install node packages:
+:heavy_check_mark: Lastly, run the **npm** command to install node packages:
 
 >```npm install```
 
