@@ -14,11 +14,14 @@ Project Setup Instructions
 
 **To setup this project on a local machine:**
 
-:memo: This project uses a few **npm** scripts as it's task runner. **Git** version control and **Node.js** should be installed and configured *before* installing Jasmine. Overall, the following dependencies are required:
+:memo: This project uses a few **npm** scripts as it's task runner. **Git** version control and **Node.js** should be installed and configured *before* installing Jasmine. You may also want to consider using [nvm](https://github.com/creationix/nvm/blob/master/README.md#installation) to install Node.js and avoid [file permission issues](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
+
+But overall, the following dependencies are required:
 
 - [ ] Git version control ([Getting Started with Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
 - [ ] [Node.js](https://nodejs.org/en/)
 - [ ] [Jasmine](https://jasmine.github.io/pages/getting_started.html)
+
 
 For each dependency, be sure to follow the install instructions specific to your machine's operating system. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/).
 

@@ -33,11 +33,13 @@ local.properties
 .dropbox.attr
 .dropbox.cache
 
+# Visual Code
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.vscode
 
 #################
 ## Visual Studio
