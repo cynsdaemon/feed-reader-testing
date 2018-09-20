@@ -1,0 +1,26 @@
+{
+  "name": "feed-reader-testing",
+  "version": "1.0.0",
+  "description": "unit tests for feed reader",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "eslint": "^5.6.0",
+    "eslint-config-google": "^0.10.0",
+    "jasmine": "^3.2.0"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cynsdaemon/feed-reader-testing.git"
+  },
+  "author": "cynsdaemon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cynsdaemon/feed-reader-testing/issues"
+  },
+  "homepage": "https://github.com/cynsdaemon/feed-reader-testing#readme"
+}
