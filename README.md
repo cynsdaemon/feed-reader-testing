@@ -5,7 +5,7 @@ This repo serves as a home for the 'Feed Reader Testing' project in the Udacity 
 
 This project is an exercise for writing tests against a pre-existing application, and a study of test-driven development.
 
-The Feed Reader is a web-based application that reads [RSS feeds](https://en.wikipedia.org/wiki/RSS). It uses the Google Feed Reader API and stores RSS feeds as a JSON object. The unit tests are written with [Jasmine](http://jasmine.github.io/), a JavaScript behavioral test suite developed by [Pivotal Labs](https://pivotal.io/open-source).
+The Feed Reader is a web-based application that pulls in the [RSS feeds](https://en.wikipedia.org/wiki/RSS) from the Udacity blog. It uses the Google Feed Reader API and stores RSS feeds as a JSON object. The unit tests are written with [Jasmine](http://jasmine.github.io/), a JavaScript behavioral test suite developed by [Pivotal Labs](https://pivotal.io/open-source).
 
 The written tests help to analyze multiple aspects of the Feed Reader such as the logic, event handling and DOM manipulation, and to test whether introducing new code will break a feature without having to manually test the application.
 

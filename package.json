@@ -5,13 +5,17 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^9.1.5",
     "browser-sync": "^2.24.7",
     "eslint": "^5.6.0",
     "eslint-config-google": "^0.10.0",
     "jasmine": "^3.2.0"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "lint": "eslint src/js",
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "server": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'"
   },
   "repository": {
     "type": "git",
