@@ -12,8 +12,8 @@
   },
   "scripts": {
     "test": "jasmine",
-    "lint": "eslint src/js",
-    "server": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'"
+    "lint": "eslint js",
+    "server": "browser-sync start --server --files 'css/*.css, js/*.js'"
   },
   "repository": {
     "type": "git",
