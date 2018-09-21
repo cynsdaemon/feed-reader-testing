@@ -14,7 +14,7 @@ Project Setup Instructions
 
 **To setup this project on a local machine:**
 
-:memo: This project uses a few **npm** scripts as it's task runner. **Git** version control and **Node.js** should be installed and configured *before* installing Jasmine. You may also want to consider using [nvm](https://github.com/creationix/nvm/blob/master/README.md#installation) to install Node.js and avoid [file permission issues](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
+:memo: This project uses a few **npm** scripts as it's task runner. **Git** version control and **Node.js** should be installed and configured *before* installing Jasmine. You may also want to consider using [nvm](https://github.com/creationix/nvm/blob/master/README.md#installation) to install Node.js to avoid [file permission issues](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
 
 But overall, the following dependencies are required:
 
