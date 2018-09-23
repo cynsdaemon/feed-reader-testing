@@ -14,34 +14,21 @@ Project Setup Instructions
 
 **To setup this project on a local machine:**
 
-:memo: This project uses a few **npm** scripts as it's task runner. **Git** version control and **Node.js** should be installed and configured *before* installing Jasmine. You may also want to consider using [nvm](https://github.com/creationix/nvm/blob/master/README.md#installation) to install Node.js to avoid [file permission issues](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
-
-But overall, the following dependencies are required:
+:memo: This project uses the Jasmine testing framework as a standalone - meaning, this project doesn't use **npm** or **gulp** build tasks. As such it's pretty straightforward to get up and running. The following dependencies are used:
 
 - [ ] Git version control ([Getting Started with Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
-- [ ] [Node.js](https://nodejs.org/en/)
-- [ ] [Jasmine](https://jasmine.github.io/pages/getting_started.html)
+- [ ] Read about how to [get started with Jasmine](https://jasmine.github.io/pages/getting_started.html)
 
+:heavy_check_mark: Be sure to follow the install instructions specific to your machine's operating system.
 
-For each dependency, be sure to follow the install instructions specific to your machine's operating system. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/).
+ Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/).
 
-:heavy_check_mark: Open a terminal in the root directory of the project, and run the **npm** commands to install packages:
-
-1. >```npm install```
-
-This starts a local server, opens a web browser, and watches for file changes:
-
-2. >```npm run server```
-
-Once all of the project's dependencies are installed, run Jasmine tests:
-
-3. > ```npm test```
 
 **To view or edit tests:** Navigate to the [Jasmine tests](/jasmine/spec/feedreader.js) file. The file lives in the repository:
 
 >```./jasmine/spec/feedreader.js```
 
-### Screenshot of Feed Reader app up and running:
+### Screenshot of Feed Reader app once it's up and running:
 ![](img/screenshot-feed-reader.png)
 
 Resources
