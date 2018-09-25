@@ -13,6 +13,11 @@ $(function() {
     * a related set of tests. This suite is all about the RSS
     * feeds definitions, the allFeeds variable in our application.
     */
+
+   // DOM References:
+   const menu = document.querySelector('.menu-icon-link');
+   const body = document.querySelector('body');
+
     describe('RSS Feeds', function() {
 
         it('all feeds are defined', function() {
@@ -20,7 +25,6 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-        // The allFeeds has a URL defined and that the URL is not empty.
         it('each url is defined', function(){
             for(let feed of allFeeds){
                 expect(feed.url).toBeDefined();
@@ -29,7 +33,6 @@ $(function() {
 
         });
 
-        // The allFeeds object has a name defined and that the name is not empty.
         it('and each url has a name defined', function(){
             for(let feed of allFeeds){
                 expect(feed.name).toBeDefined();
@@ -40,14 +43,19 @@ $(function() {
     });
 
     describe('the menu', function(){
-        const body = document.querySelector('body');
-
-        // The menu element is hidden by default
         it('the menu is hidden by default', function(){
             expect(body.classList.contains('menu-hidden')).toBe(true);
         });
 
+        it('the menu displays when clicked', function(){
+            menu.click();
+            expect(body.classList.contains('menu-hidden')).toBe(false);
+        });
 
+        it('and the menu is hidden when clicked again', function(){
+            menu.click();
+            expect(body.classList.contains('menu-hidden')).toBe(true);
+        });
 
 
                  /* TODO: Write a test that ensures the menu changes
