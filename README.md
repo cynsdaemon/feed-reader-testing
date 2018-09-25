@@ -18,8 +18,9 @@ Project Setup Instructions
 
 - [ ] Git version control - [get started with Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [ ] Jasmine - [get started with Jasmine](https://jasmine.github.io/pages/getting_started.html)
+- [ ] Your favorite local server
 
-:heavy_check_mark: Be sure to follow the dependency setup instructions specific to your machine's operating system. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/).
+:heavy_check_mark: Be sure to follow the dependency setup instructions specific to your machine's operating system. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/) and open it in your favorite web browser or run a local server.
 
 **To view or edit tests:** Navigate to the [Jasmine tests](/jasmine/spec/feedreader.js) file. The file lives in the repository:
 
