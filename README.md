@@ -17,7 +17,7 @@ Project Setup Instructions
 :memo: This project uses the Jasmine testing framework as a standalone. It doesn't use any build tools, et al. And you can view which tests are passing/failing right in the web browser. As such it's pretty straightforward to get up and running. The following dependencies are used:
 
 - [ ] Git version control - [get started with Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [ ] Jasmine - [get started with Jasmine](https://jasmine.github.io/pages/getting_started.html)
+- [ ] Jasmine **Version 3.2.1** - [get started with Jasmine](https://jasmine.github.io/pages/getting_started.html)
 - [ ] Your favorite local server
 
 :heavy_check_mark: Be sure to follow the dependency setup instructions specific to your machine's operating system. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/) and open it in your favorite web browser or run a local server.

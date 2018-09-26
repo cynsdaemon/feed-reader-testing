@@ -43,16 +43,16 @@ $(function() {
     });
 
     describe('the menu', function(){
-        it('the menu is hidden by default', function(){
+        it('is hidden by default', function(){
             expect(body.classList.contains('menu-hidden')).toBe(true);
         });
 
-        it('the menu displays when clicked', function(){
+        it('displays when clicked', function(){
             menu.click();
             expect(body.classList.contains('menu-hidden')).toBe(false);
         });
 
-        it('and the menu is hidden when clicked again', function(){
+        it('and is hidden when clicked again', function(){
             menu.click();
             expect(body.classList.contains('menu-hidden')).toBe(true);
         });
