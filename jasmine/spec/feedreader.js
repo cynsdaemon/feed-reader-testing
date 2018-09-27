@@ -13,16 +13,15 @@ $(function() {
     * a related set of tests. This suite is all about the RSS
     * feeds definitions, the allFeeds variable in our application.
     */
-
-   // DOM References:
-   const menu = document.querySelector('.menu-icon-link');
-   const body = document.querySelector('body');
-
     describe('RSS Feeds', function() {
-
+        /* The feeds and urls are defined and are greater
+         * than zero. Each feed should have a name defined
+         * and should not return empty single or double quotes
+         * or null.
+         */
         it('all feeds are defined', function() {
             expect(allFeeds).toBeDefined();
-            expect(allFeeds.length).not.toBe(0);
+            expect(allFeeds.length).toBeGreaterThan(0);
         });
 
         it('each url is defined', function(){
@@ -36,15 +35,21 @@ $(function() {
         it('and each url has a name defined', function(){
             for(let feed of allFeeds){
                 expect(feed.name).toBeDefined();
-                expect(feed.name).not.toBe('', null);
+                expect(feed.name).not.toBeNull();
+                expect(feed.name).not.toBe('', "");
             }
         });
 
     });
 
     describe('the menu', function(){
+        const menu = document.querySelector('.menu-icon-link');
+        const body = document.querySelector('body');
+        /* The body should have it's menu hidden by default
+         * and the .menu-hidden should toggle when clicked.
+         */
         it('is hidden by default', function(){
-            expect(body.classList.contains('menu-hidden')).toBe(true);
+            expect(body).toHaveClass('menu-hidden');
         });
 
         it('displays when clicked', function(){
@@ -59,23 +64,53 @@ $(function() {
     });
 
     describe('Initial Entries', function(){
-    /* TODO: Write a new test suite named "Initial Entries" */
-
-        /* TODO: Write a test that ensures when the loadFeed
-         * function is called and completes its work, there is at least
-         * a single .entry element within the .feed container.
-         * Remember, loadFeed() is asynchronous so this test will require
-         * the use of Jasmine's beforeEach and asynchronous done() function.
+        const feed = document.querySelector('.feed');
+        /* Wait for the loadFeed to finish loading then check that
+         * the feed content is greater than zero.
          */
+        beforeEach(function(done) {
+            loadFeed(0, done);
+        });
+
+        it('there is an entry in the feed', function(){
+            expect(feed.childElementCount).toBeGreaterThan(0);
+        });
+
     });
 
     describe('New Feed Selection', function(){
-    /* TODO: Write a new test suite named "New Feed Selection" */
-
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
+        let feedOne,
+            feedTwo;
+        /* By storing the entries in variables we can compare
+         * whether the articles change when loadFeed is
+         * done loading.
          */
+        beforeEach(function(done){
+            loadFeed(0, function(){
+                feedOne = document.querySelectorAll('.entry')[0].innerText;
+
+                loadFeed(1, function(){
+                    feedTwo = document.querySelectorAll('.entry')[1].innerText;
+                    done();
+
+                })
+            })
+
+
+        })
+
+        it('content changes when feed is loaded', function(){
+           expect(feedOne === feedTwo).toBe(false);
+
+        });
+
     });
+
+
+
+
+
+
+
 
 }());
