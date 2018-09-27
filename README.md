@@ -20,10 +20,10 @@ Project Setup Instructions
 - [ ] Git version control - [get started with Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [ ] Jasmine **Version 3.2.1** - [get started with Jasmine](https://jasmine.github.io/pages/getting_started.html)
 - [ ] a dash of some Handlebars.js snippets - [read more about Handlebars.js](https://handlebarsjs.com/)
-- [ ] a Google hosted [JQuery library](https://developers.google.com/speed/libraries/#jquery)
+- [ ] [JQuery](https://developers.google.com/speed/libraries/#jquery)
 - [ ] Your favorite local server and web browser
 
-:heavy_check_mark: Be sure to follow the dependency setup instructions specific to your machine's operating system. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/) and open it in your favorite web browser or run a local server.
+:heavy_check_mark: Be somewhat acquainted with the dependencies above. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/) and open it in your favorite web browser or run a local server.
 
 **To view or edit tests:** Navigate to the [Jasmine tests](/jasmine/spec/feedreader.js) file. The file lives in the repository:
 
