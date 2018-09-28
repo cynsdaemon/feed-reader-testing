@@ -25,17 +25,12 @@ $(function() {
 
         });
 
-        it('each url is defined', function(){
+        it('each url and url name is defined', function(){
             for(let feed of allFeeds){
                 expect(feed.url).toBeTruthy(); // covers all truthiness
+                expect(feed.name).toBeTruthy();
             }
 
-        });
-
-        it('and each url has a name defined', function(){
-            for(let feed of allFeeds){
-                expect(feed.name).toBeTruthy(); // covers all truthiness
-            }
         });
 
     });
