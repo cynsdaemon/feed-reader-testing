@@ -14,16 +14,16 @@ Project Setup Instructions
 
 **To setup this project on a local machine:**
 
-:memo: This project uses the Jasmine testing framework as a standalone. It doesn't use any build tools, et al. And you can view which tests are passing/failing right in the web browser. As such it's pretty straightforward to get up and running. The following dependencies are used:
+:heavy_check_mark: This project uses the Jasmine testing framework as a standalone. It doesn't use any build tools, et al. And you can view which tests are passing/failing right in the web browser. As such it's pretty straightforward to get up and running. The following dependencies are used:
 
 - [ ] A local machine with Internet access
+- [ ] Your favorite local server and web browser
 - [ ] Git version control - [get started with Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [ ] Jasmine **Version 3.2.1** - [get started with Jasmine](https://jasmine.github.io/pages/getting_started.html)
 - [ ] a dash of some Handlebars.js snippets - [read more about Handlebars.js](https://handlebarsjs.com/)
-- [ ] [JQuery](https://developers.google.com/speed/libraries/#jquery)
-- [ ] Your favorite local server and web browser
+- [ ] the [JQuery](https://developers.google.com/speed/libraries/#jquery) (yes, the JQuery)
 
-:heavy_check_mark: Be somewhat acquainted with the dependencies above. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/) and open it in your favorite web browser or run a local server.
+:memo: Be somewhat acquainted with the dependencies above. Then, fork, download or clone this project [from Github](https://github.com/cynsdaemon/feed-reader-testing/) and open it in your favorite web browser or run a local server.
 
 **To view or edit tests:** Navigate to the [Jasmine tests](/jasmine/spec/feedreader.js) file. The file lives in the repository:
 
