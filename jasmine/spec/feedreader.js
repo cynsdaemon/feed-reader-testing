@@ -38,8 +38,8 @@ $(function() {
     describe('the menu', function(){
         const menu = document.querySelector('.menu-icon-link');
         const body = document.querySelector('body');
-        /* The body should have it's menu hidden by default AFTER the init
-         * function, and menu-hidden should toggle when clicked.
+        /* The body should have it's menu hidden and
+         * menu-hidden should toggle when clicked.
          */
         it('is hidden by default', function(){
             expect(body.classList.contains('menu-hidden')).toBe(true);
