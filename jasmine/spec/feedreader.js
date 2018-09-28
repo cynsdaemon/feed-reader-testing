@@ -49,7 +49,7 @@ $(function() {
          * and the .menu-hidden should toggle when clicked.
          */
         it('is hidden by default', function(){
-            expect(body).toHaveClass('menu-hidden');
+            expect(body.classList.contains('menu-hidden')).toBe(false);
         });
 
         it('displays when clicked', function(){
