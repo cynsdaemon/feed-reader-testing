@@ -22,21 +22,19 @@ $(function() {
         it('all feeds are defined', function() {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).toBeGreaterThan(0);
+
         });
 
         it('each url is defined', function(){
             for(let feed of allFeeds){
-                expect(feed.url).toBeDefined();
-                expect(feed.url.length).not.toBe(0);
+                expect(feed.url).toBeTruthy(); // covers all truthiness
             }
 
         });
 
         it('and each url has a name defined', function(){
             for(let feed of allFeeds){
-                expect(feed.name).toBeDefined();
-                expect(feed.name).not.toBeNull();
-                expect(feed.name).not.toBe('', "");
+                expect(feed.name).toBeTruthy(); // covers all truthiness
             }
         });
 
@@ -45,35 +43,39 @@ $(function() {
     describe('the menu', function(){
         const menu = document.querySelector('.menu-icon-link');
         const body = document.querySelector('body');
-        /* The body should have it's menu hidden by default
-         * and the .menu-hidden should toggle when clicked.
+        /* The body should have it's menu hidden by default AFTER the init
+         * function, and menu-hidden should toggle when clicked.
          */
         it('is hidden by default', function(){
-            expect(body.classList.contains('menu-hidden')).toBe(false);
+            expect(body.classList.contains('menu-hidden')).toBe(true);
+
         });
 
         it('displays when clicked', function(){
             menu.click();
-            expect(body.classList.contains('menu-hidden')).toBe(false);
+            expect(body.classList.toggle('menu-hidden')).toBe(true);
+
         });
 
-        it('and is hidden when clicked again', function(){
-            menu.click();
-            expect(body.classList.contains('menu-hidden')).toBe(true);
-        });
     });
 
     describe('Initial Entries', function(){
-        const feed = document.querySelector('.feed');
+        let entries;
         /* Wait for the loadFeed to finish loading then check that
          * the feed content is greater than zero.
          */
         beforeEach(function(done) {
-            loadFeed(0, done);
+            loadFeed(0, function(){
+                entries = document.querySelectorAll('.entry');
+                done();
+
+            });
+
         });
 
         it('there is an entry in the feed', function(){
-            expect(feed.childElementCount).toBeGreaterThan(0);
+            expect(entries.length).toBeGreaterThan(0);
+
         });
 
     });
@@ -95,8 +97,6 @@ $(function() {
 
                 })
             })
-
-
         })
 
         it('content changes when feed is loaded', function(){
