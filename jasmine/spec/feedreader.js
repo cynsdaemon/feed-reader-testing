@@ -86,10 +86,10 @@ $(function() {
          */
         beforeEach(function(done){
             loadFeed(0, function(){
-                feedOne = document.querySelectorAll('.entry')[0].innerText;
+                feedOne = document.querySelectorAll('.entry')[0].innerHTML;
 
                 loadFeed(1, function(){
-                    feedTwo = document.querySelectorAll('.entry')[1].innerText;
+                    feedTwo = document.querySelectorAll('.entry')[1].innerHTML;
                     done();
 
                 })
