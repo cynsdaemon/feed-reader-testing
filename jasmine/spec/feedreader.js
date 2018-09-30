@@ -89,7 +89,7 @@ $(function() {
                 feedOne = document.querySelectorAll('.entry')[0].innerHTML;
 
                 loadFeed(1, function(){
-                    feedTwo = document.querySelectorAll('.entry')[1].innerHTML;
+                    feedTwo = document.querySelectorAll('.entry')[0].innerHTML;
                     done();
 
                 })
